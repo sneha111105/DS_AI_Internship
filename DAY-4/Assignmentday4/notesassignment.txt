@@ -1,0 +1,28 @@
+================================================================================
+                    PYTHON BUILT-IN MODULES QUICK REFERENCE
+================================================================================
+
+Category           Module        Primary Purpose
+--------------------------------------------------------------------------------
+System & OS        os            File system navigation, directory manipulation, and OS tasks.
+                   sys           Access system-specific parameters and Python runtime variables.
+                   subprocess    Execute external shell commands and programs.
+
+Math & Numbers     math          Standard mathematical functions (e.g., sqrt, sin, factorial).
+                   random        Generate pseudo-random numbers and make random selections.
+                   statistics    Basic statistical calculations (e.g., mean, median, stdev).
+
+Date & Time        datetime      Work with dates, times, and time intervals.
+                   time          Access system time and set delay timers.
+
+Data &             json          Parse and convert JSON strings and files.
+Serialization      csv           Read and write comma-separated value files.
+                   pickle        Convert Python object hierarchies into byte streams.
+
+Data Structures    collections   Advanced container data types (Counter, deque, defaultdict).
+                   itertools     Memory-efficient tools for creating iterators and combinations.
+
+Text & Search      re            Regular expression operations for pattern matching.
+
+Networking         urllib        Handle web URLs and make basic HTTP requests.
+================================================================================
