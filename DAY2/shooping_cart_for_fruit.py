@@ -9,7 +9,6 @@ while True:
         print(item, "added to cart.")
 
 print("\nYour Shopping Cart:")
-
 if len(cart) == 0:
     print("Your cart is empty.")
 else:
