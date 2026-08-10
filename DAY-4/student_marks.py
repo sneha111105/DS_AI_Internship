@@ -9,4 +9,4 @@ def student_marks():
 
     print("\nTotal Marks =", total)
 
-student_marks()
+student_marks() 
