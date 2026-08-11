@@ -11,6 +11,7 @@ r=np.median(marks,axis=0)#row wise median each subject
 print("Median of each subject:",r)
 print("Shape of r array:",r.shape)
 print("\n")
+
 result=np.median(marks,axis=1)#column wise median each student
 print("Median of each student:",result)
 print("Shape of result array:",result.shape)

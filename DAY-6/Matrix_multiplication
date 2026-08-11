@@ -9,8 +9,3 @@ result=A@B #multiplication of two matrices using @ operator
 print(result)
 
 
-#transpose of a matrix
-print(A.T)
-
-#determinant of a matrix
-print(np.linalg.det(A))
