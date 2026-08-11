@@ -6,5 +6,5 @@ print(x)
 y=np.array([10,20,30])#COLUM WISE
 
 print(x+y)
-z=np.array([[10],[20],[30]])
+z=np.array([[10],[20],[30]])#ROW WISE  
 print(x+z)
