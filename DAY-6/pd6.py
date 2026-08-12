@@ -11,4 +11,6 @@ print("\n")
 
 print("Index of the third element WITH values")
 print(y.index[2],":",y.iloc[2])
+
+print("acessing the third element")
 print(y.index[2])

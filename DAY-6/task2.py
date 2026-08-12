@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 1. Create a Series with different cases and missing values
-names = pd.Series(['Al ice', 'BOB', np.nan, 'Charlie', 'DAVID', None, 'eve'])
+names = pd.Series(['Alice  ', 'BOB', np.nan, 'Charlie', 'DAVID', None, 'eve'])
 print("--- Original Series ---")
 print(names)
 # 2. Detect missing values
@@ -38,7 +38,8 @@ names_replaced = names_lower.str.replace('a', '@')
 print("\nNames after replacing 'a' with '@'")
 print(names_replaced)
 
-#strip whitespace from names
+#strip whitespace from names only in starting and engding
+
 names_stripped = names.str.strip()
 print("\nNames after stripping whitespace")
 print(names_stripped)
