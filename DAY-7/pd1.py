@@ -28,6 +28,8 @@ print("First rows:\n", df.head())
 print("\nDataset info:")
 print(df.info())
 
+print("\n data describe")
+print(df.describe())
 
 # STEP 4 - Check missing values
 print("\nMissing values per column:")

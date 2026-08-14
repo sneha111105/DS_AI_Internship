@@ -8,15 +8,15 @@ print("Shape:", df.shape)
 print("Data Types:\n", df.dtypes)
 print("\nMissing Values Count:\n", df.isnull().sum())
 print("\nDuplicate Rows Count:", df.duplicated().sum())
+print("\n data info:",df.info())
 
-
-# 2. Remove Duplicate Rows
+#Remove Duplicate Rows
 df = df.drop_duplicates().reset_index(drop=True)
 
-#  Clean whitespace & fix casing
+#  Clean whitespace 
 df['Name'] = df['Name'].astype(str).str.strip().str.title()
 
-#Fill numeric columns with median (less sensitive to outliers)
+#Fill numeric columns 
 df['Math_Score'] = df['Math_Score'].fillna(df['Math_Score'].mean())
 df['Science_Score'] = df['Science_Score'].fillna(df['Science_Score'].mean())
 
@@ -30,7 +30,7 @@ df['Student_ID'] = df['Student_ID'].astype(int)
 df = df[(df['Math_Score'] >= 0) & (df['Math_Score'] <= 100)]
 df = df[(df['Science_Score'] >= 0) & (df['Science_Score'] <= 100)]
 
-print("\n--- Cleaned Dataset ---")
+print("\n Cleaned Dataset ")
 print(df)
 print("\nFinal Shape:", df.shape)
 

@@ -1,0 +1,4 @@
+{
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+    "editor.inlineSuggest.enabled": true
+}
