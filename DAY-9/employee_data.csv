@@ -6,4 +6,5 @@ data = {
     "Gender": ["M","F","M","M","F","F","M","M","F","F","M","F"]
 }
 
-df = pd.DataFrame(data)
+
+
