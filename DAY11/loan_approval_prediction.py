@@ -255,7 +255,7 @@ else:
 
 # Data Leakage:
 # Never use information that becomes available AFTER the
-# loan decision, such as future repayment status.
+# loan decision, su ch as future repayment status.
 #
 # Overfitting:
 # Training accuracy is very high but testing accuracy is much
