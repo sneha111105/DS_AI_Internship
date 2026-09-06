@@ -1,41 +1,7 @@
 import pandas as pd
-import numpy as np
 
-# Create student performance dataset
-data = {
-    "Student_ID": [
-        101, 102, 103, 104, 105,
-        106, 107, 108, 109, 110,
-        111, 112, 113, 114, 115,
-        103
-    ],
-    "Name": [
-        "Rahul", "Priya", "Arjun", "Sneha", "Kiran",
-        "Anjali", "Vikram", "Neha", "Rohan", "Pooja",
-        "Amit", "Divya", "Manoj", "Kavya", "Suresh",
-        "Arjun"
-    ],
-    "Maths": [
-        85, 90, np.nan, 76, 88,
-        92, 79, 95, np.nan, 84,
-        73, 89, 91, 78, 86,
-        78
-    ],
-    "Science": [
-        88, 92, 85, np.nan, 90,
-        94, 81, 96, 87, np.nan,
-        75, 91, 89, 80, 88,
-        85
-    ],
-    "English": [
-        82, 89, 80, 75, np.nan,
-        91, 78, 94, 86, 83,
-        72, 90, 88, np.nan, 85,
-        80
-    }
-}
-
-df = pd.DataFrame(data)
+# Read dataset from CSV file
+df = pd.read_csv("tasks\student_performance (1).csv")
 
 # Display dataset
 print("Original Dataset:")
@@ -72,6 +38,7 @@ df = df.drop_duplicates()
 # Reset index
 df = df.reset_index(drop=True)
 
+# Display cleaned dataset
 print("\nCleaned Dataset:")
 print(df)
 
@@ -79,8 +46,10 @@ print(df)
 print("\nMissing Values After Cleaning:")
 print(df.isnull().sum())
 
+# Verify duplicates
 print("\nDuplicates After Cleaning:")
 print(df.duplicated().sum())
 
+# Final shape
 print("\nFinal Shape:")
 print(df.shape)
